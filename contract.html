@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Dogecoin is an open source peer-to-peer digital currency, favored by Shiba Inus worldwide.">
+    <meta name="author" content>
+    <link rel="canonical" href="/contract">
+    <title>LiteSole Coin | Contract Details</title>
+   
+    <link rel="icon" type="image/x-icon" href="images/MinPic1.png">
+    
+    <link rel="preload" href="assets/vendor/fa/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="assets/vendor/fa/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap" rel="stylesheet" type="text/css">
+   
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/sty.css" rel="stylesheet">
+</head>
+<body id="page-top">
+  
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container-fluid">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">&nbsp;LiteSole Coin</a>
+            <a href="index.html" class="btn btn-outline-light js-scroll-trigger font-weight-bold">Main Page</a>
+
+        </div>
+    </nav>
+    
+    <header class="masthead bg-primary text-white text-center" style="position:relative;">
+        <div id="particles" style="position:absolute;top:0;bottom:0;left:0;right:0;"></div>
+        <div class="container d-flex align-items-center flex-column"></div>
+        <div class="col-md-12">
+            <img class="masthead-avatar mb-1" style="margin-top:-1rem;" src="images/MinPic.png" alt>
+        </div>
+        </header>
+
+
+        <section class="page-section portfolio" id="start">
+            
+            <div class="container">
+
+           
+                <h2 class="col-md-12 text-center text-secondary mb-2">Contract Details</h2>
+
+           
+
+                <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-angle-down"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            
+            <div class="box text-center ">
+                <h4 class="lead font-weight-bold text-center "><span>Network Name :- Binance Smart Chain</span></h4><br><br>
+                <h4 class="lead font-weight-bold text-center "><span>Token Name :- LiteSole Coin</span></h4><br><br>
+                <h4 class="lead font-weight-bold text-center "><span>Contract Address :- 0xBc0245979dc8213f38566D246652d68d6642D291</span></h4><br><br>
+                <h4 class="lead font-weight-bold text-center "><span>Decimals :- 18</span></h5><br><br>
+                <h4 class="lead font-weight-bold text-center "><span>Token Symbol :- LSC</span></h4><br><br>
+            </div>
+
+            <div class="container">
+
+           
+                <h2 class="col-md-12 text-center text-secondary mb-2">How To Increase Coin Supply</h2>
+
+           
+
+                <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-angle-down"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+                        <div class="contact-center">
+                            <form name="submit-to-google-sheet">
+                                <input class="text-center" type="text" name="Name" placeholder="Your Name" required><br><br>
+                                <input class="text-center" type="email" name="Email" placeholder="Your Email" required><br><br>
+                                <textarea class="text-center" name="Message" rows="6" placeholder="Your Message"></textarea><br><br>
+                                <button type="submit" class="btn btn2 btn-sm btn-outline-secondary js-scroll-trigger">Submit</button><br><br>
+                            </form>
+                            <span id="msg" class="text-center" ></span><br>
+                        </div>
+            <div class="note">
+                <h25 class="lead font-weight-bold text-center "><span class="text-col">Note :-</span> <span> By purchasing LiteSole Coin, you agree that you are not purchasing a security or investment contract and you agree to hold the team harmless and not liable for any losses or taxes you may incur. Although LSC is a community driven DeFi Ecosystem and not a registered digital currency, always make sure that you are in compliance with local laws and regulations before you make any purchase. Cryptocurrencies are not legal tender and are not investments.</span></h25><br><br>
+            </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="copyright py-4 text-center text-white">
+    <div class="container">
+        <small>Copyright © The LiteSole Coin Project 2022</small>
+        <br>
+        <small>Created by Back Bencher</small>
+    </div>
+</div>
+
+<div class="scroll-to-top d-lg-none position-fixed">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+</div>
+    <script src="js/scripts.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyHHpkb1oKNWTf03ve9mBsHh-RWob2qETDNR2xdo-xwCXce0jb7wz5LTD_IP6InHe24Yw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
+
+         
+
+         
